@@ -1,0 +1,55 @@
+<!DOCTYPE HTML><!DOCTYPE HTML>
+<html>
+<head>
+  <title>Regisztracio</title>
+</head>
+<body>
+  <style>
+    body {
+  
+  background-color:grey;
+}
+  </style>
+  <center>
+ <form action="insert.php" method="POST">
+  <table>
+   <tr>
+    <td>Felhasznalo nev :</td>
+    <td><input type="text" name="username" required></td>
+   </tr>
+   <tr>
+    <td>Jelszo :</td>
+    <td><input type="password" name="password" required></td>
+   </tr>
+   <tr>
+    <td>Szoba foglalas :</td>
+    <td>
+     <input type="radio" name="gender" value="m" required>1.Szoba
+     <input type="radio" name="gender" value="f" required>2.Szoba
+     <input type="radio" name="gender" value="f" required>3.Szoba
+    </td>
+   </tr>
+   <tr>
+    <td>Email :</td>
+    <td><input type="email" name="email" required></td>
+   </tr> 
+   <tr>
+    <td>Telefon :</td>
+    <td>
+     <select name="phoneCode" required>
+      <option selected hidden value="">Hivo szam</option>
+      <option value="977">+421</option>
+      <option value="978">+36</option>
+      
+     </select>
+     <input type="phone" name="phone" required>
+    </td>
+   </tr>
+   <tr>
+    <td><input type="submit" value="Submit" name="submit"></td>
+   </tr>
+  </table>
+ </form>
+ </style>
+</body>
+</html>
